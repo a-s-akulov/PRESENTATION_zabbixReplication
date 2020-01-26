@@ -1,0 +1,48 @@
+﻿ 10:23:25 [INFO] Logging started successfully
+
+ 10:23:25 [INFO] Autor: akulov.a
+ [INFO] Program is entended for data replication from SQL server to Zabbix
+
+
+
+ 10:23:25 >>> Connecting to SQL server...
+ 10:23:25 > Successfully connected with 'mailserver\newbooksql'
+
+ 10:23:25 >>> Starting to execute SQL requests...
+ 10:23:25 > All requests successfully completed
+ 10:23:25 > Connection with 'mailserver\newbooksql' successfully closed
+
+ 10:23:25 >>> Getting Authentication key from server 'http://192.168.3.80/zabbix/api_jsonrpc.php'...
+ 10:23:25 > Authentication key successfully received
+
+ 10:23:25 >>> Getting data from Zabbix server...
+ 10:23:26 > Data successfully received
+ > Duplicates detected: 0
+ > Hosts detected: 3359
+
+ 10:23:26 >>> Calculating list of hosts for delete from Zabbix...
+ 10:23:26 > Delete list successfully calculated
+ > Hosts for delete count (exclude duplicates): 0
+
+ 10:23:26 >>> No uncorrect hosts detected (exclude duplicates)
+
+ 10:23:26 >>> No duplicate hosts detected
+
+ 10:23:26 >>> Adding hosts from SQL to Zabbix...
+ 10:23:27 > Host added. IP: '172.16.3.205', Group: 34, Name: 'Октябрьское поле  - ККТ - 172.16.3.205', templates: '['36503', '36504']', maintenanceGroup: '43', proxy: '36506'
+
+ > Operation succesfully completed!
+ > Added 1 hosts.
+
+>>> Rebuilding triggers dependencies...
+ 10:23:27 > Getting currect triggers for updated shops...
+ 10:23:27 > Clearing all dependencies for updated shops...
+ 10:23:27 > Building new dependencies...
+ 10:23:27 > Dependencies builded for 1 shop(s)
+ 10:23:27 > Sending a request to the server...
+
+> Triggers dependencies rebuilded succesfully!
+
+
+
+===> Replication successfully completed, system shutdown after 10 seconds.
